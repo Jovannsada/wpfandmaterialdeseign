@@ -1,0 +1,46 @@
+﻿<Window x:Class="MyAssignment.com.MainWindow"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyAssignment.com"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <materialDesign:Card Padding="32" Margin="35,18,42,0" Grid.ColumnSpan="2">
+            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" Text="TSENA SIGN UP"/>
+        </materialDesign:Card>
+        <TextBox
+                 x:Name="usernametxt"
+                 materialDesign:HintAssist.Hint="Username"
+                 materialDesign:TextFieldAssist.TextBoxViewMargin="1 0 1 0"
+                 materialDesign:HintAssist.FloatingScale="0.50"                 
+                 Text=""
+                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                 FontSize="24" RenderTransformOrigin="0.483,0.332" Margin="53,133,80.263,350" TextChanged="TextBox_TextChanged"/>
+        <TextBox
+            x:Name="passwordtxt"
+            materialDesign:HintAssist.Hint="Password"
+            materialDesign:TextFieldAssist.TextBoxViewMargin="1 0 1 0"
+            materialDesign:HintAssist.FloatingScale="0.50"                 
+            Text=""
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            FontSize="24" RenderTransformOrigin="0.483,0.332" Margin="53,224,80.263,262" TextChanged="TextBox_TextChanged_1"/>
+
+        <Button ToolTip="One" Margin="35,364,282,173" Content="LOG IN" Click="Button_Click"/>
+        <Button ToolTip="One" Margin="280,353,37,184" Content="SIGN UP" Click="Button_Click_1"/>
+
+
+
+
+
+
+
+
+    </Grid>
+</Window>
